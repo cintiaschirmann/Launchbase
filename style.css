@@ -2,6 +2,7 @@
 
 :root {
   --color-green: #50fa7b;
+  --color-pink: #d978e6;
 }
 
 * {
@@ -22,13 +23,13 @@ header {
   background: rgba(0, 0, 0, );
 }
 
-header div {
+.links {
   text-align: center;
 }
 
-header div a {  
+.links a {  
   color:white;
-  font-style: 18px;
+  font-size: 18px;
   line-height: 28px;
   margin: 0 16px;
   padding-bottom: 3px;
@@ -36,9 +37,8 @@ header div a {
  
 }
 
-header div a:hover{
-  color: var(--color-green)
-  /*transition: color 200ms*/
+.links a:hover{
+  background-color: var(--color-pink);
 }
 
 #wrapper {
@@ -48,8 +48,9 @@ header div a:hover{
 
 #wrapper img {
   border-radius: 50%;
-  border: 5px solid var(--color-green);
+  border: 5px solid var(--color-pink);
   margin-bottom: 32px;
+  height: 300px;
 }
 
 #wrapper h1 {
@@ -64,6 +65,7 @@ header div a:hover{
   font-weight: normal;
   margin-top:8px;
   opacity: 0.8;
+  text-shadow: 8px;
 }
 
 #wrapper p {
@@ -75,4 +77,9 @@ header div a:hover{
 
 #wrapper p a {
   color: var(--color-green)
+}
+
+#links-footer a {
+  border-bottom: 1px solid var(--color-green);
+  
 }
